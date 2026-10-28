@@ -2,20 +2,43 @@
 
 Free Windows app for fast photo preparation and printing.
 
-> **Current version:** 0.2.0 Alpha 2<br>
+> **Current version:** 0.2.0 Alpha 3<br>
 > **Status:** public testing<br>
 > **Platform:** Windows 10/11, 64-bit
 
 [Русская версия](README.md)
 
-[![Download Setup](https://img.shields.io/badge/Download_Setup-Recommended-0B5FFF?style=for-the-badge&logo=windows)](https://github.com/mnenracom/mnenrafoto-releases/releases/download/v0.2.0-alpha.2/MnenraFoto-0.2.0-alpha.2-win-x64-setup.exe)
-[![Portable](https://img.shields.io/badge/Portable-No_install-2F855A?style=for-the-badge)](https://github.com/mnenracom/mnenrafoto-releases/releases/download/v0.2.0-alpha.2/MnenraFoto-0.2.0-alpha.2-win-x64-portable.exe)
-[![Release page](https://img.shields.io/badge/Release-v0.2.0--alpha.2-4A5568?style=for-the-badge&logo=github)](https://github.com/mnenracom/mnenrafoto-releases/releases/tag/v0.2.0-alpha.2)
-[![SHA-256](https://img.shields.io/badge/SHA--256-Verify-805AD5?style=for-the-badge)](https://github.com/mnenracom/mnenrafoto-releases/releases/download/v0.2.0-alpha.2/SHA256SUMS.txt)
+[![Download Setup](https://img.shields.io/badge/Download_Setup-Recommended-0B5FFF?style=for-the-badge&logo=windows)](https://github.com/madeinsuslov/mnenrafoto-releases/releases/download/v0.2.0-alpha.3/MnenraFoto-0.2.0-alpha.3-win-x64-setup.exe)
+[![Portable](https://img.shields.io/badge/Portable-No_install-2F855A?style=for-the-badge)](https://github.com/madeinsuslov/mnenrafoto-releases/releases/download/v0.2.0-alpha.3/MnenraFoto-0.2.0-alpha.3-win-x64-portable.exe)
+[![Release page](https://img.shields.io/badge/Release-v0.2.0--alpha.3-4A5568?style=for-the-badge&logo=github)](https://github.com/madeinsuslov/mnenrafoto-releases/releases/tag/v0.2.0-alpha.3)
+[![SHA-256](https://img.shields.io/badge/SHA--256-Verify-805AD5?style=for-the-badge)](https://github.com/madeinsuslov/mnenrafoto-releases/releases/download/v0.2.0-alpha.3/SHA256SUMS.txt)
 
 MNENRAFOTO is a local Windows application for importing, preparing, editing, and printing photos. Photos are processed on the user's computer and are not uploaded to a cloud service.
 
-## What's new in Alpha 2
+## What's new in Alpha 3
+
+- System, light and dark appearance modes with live switching and saved preferences.
+- More readable labels, controls, menus, dialogs and disabled states.
+- Optional 0 / 1 / 2 / 3 / 5 mm photo gaps for 2- and 4-photo layouts, with preview and explicit size confirmation.
+- Epson L8050 driver-named paper selection and final paper-size validation before printing.
+- Retained release fixes for sheet placement, print progress and GDI job lifecycle.
+
+| Light | Dark |
+| --- | --- |
+| ![Alpha 3 light theme](assets/alpha3-light.png) | ![Alpha 3 dark theme](assets/alpha3-dark.png) |
+
+**This is a prerelease. L8050 is not physically verified yet.** Positive gaps currently
+require bordered printing. Four exact 100×150 mm photos do not fit a 2×2 grid on A4.
+Theme changes do not recolor photos, exports or printed images. Existing profiles
+default to dark; new profiles follow Windows appearance.
+
+Close the previous version before updating. Normal Setup/Portable builds share the
+existing profile; separate `TEST L8050` builds used an isolated test profile.
+Back up important orders/settings and test one sheet before a batch.
+
+[Detailed Alpha 3 notes (Russian)](RELEASE_NOTES_v0.2.0-alpha.3.md).
+
+## Features retained from Alpha 2
 
 - Russian and English UI are available.
 - A separate document photo mode was added.
@@ -45,10 +68,10 @@ MNENRAFOTO is a local Windows application for importing, preparing, editing, and
 
 | Option | Use case |
 | --- | --- |
-| [Setup](https://github.com/mnenracom/mnenrafoto-releases/releases/download/v0.2.0-alpha.2/MnenraFoto-0.2.0-alpha.2-win-x64-setup.exe) | Recommended for most users |
-| [Portable](https://github.com/mnenracom/mnenrafoto-releases/releases/download/v0.2.0-alpha.2/MnenraFoto-0.2.0-alpha.2-win-x64-portable.exe) | Run without installation |
-| [SHA256SUMS.txt](https://github.com/mnenracom/mnenrafoto-releases/releases/download/v0.2.0-alpha.2/SHA256SUMS.txt) | Verify downloaded files |
-| [Release page](https://github.com/mnenracom/mnenrafoto-releases/releases/tag/v0.2.0-alpha.2) | Full Alpha 2 notes and all files |
+| [Setup](https://github.com/madeinsuslov/mnenrafoto-releases/releases/download/v0.2.0-alpha.3/MnenraFoto-0.2.0-alpha.3-win-x64-setup.exe) | Recommended for most users |
+| [Portable](https://github.com/madeinsuslov/mnenrafoto-releases/releases/download/v0.2.0-alpha.3/MnenraFoto-0.2.0-alpha.3-win-x64-portable.exe) | Run without installation |
+| [SHA256SUMS.txt](https://github.com/madeinsuslov/mnenrafoto-releases/releases/download/v0.2.0-alpha.3/SHA256SUMS.txt) | Verify downloaded files |
+| [Release page](https://github.com/madeinsuslov/mnenrafoto-releases/releases/tag/v0.2.0-alpha.3) | Full Alpha 3 notes and all files |
 
 ## System requirements
 
@@ -79,17 +102,12 @@ MNENRAFOTO is a local Windows application for importing, preparing, editing, and
 ## Verify downloads
 
 ```powershell
-Get-FileHash .\MnenraFoto-0.2.0-alpha.2-win-x64-setup.exe -Algorithm SHA256
-Get-FileHash .\MnenraFoto-0.2.0-alpha.2-win-x64-portable.exe -Algorithm SHA256
+Get-FileHash .\MnenraFoto-0.2.0-alpha.3-win-x64-setup.exe -Algorithm SHA256
+Get-FileHash .\MnenraFoto-0.2.0-alpha.3-win-x64-portable.exe -Algorithm SHA256
 ```
 
-Published SHA-256:
-
-```text
-cc4744912ed2f8be921156fea6504661fd1ebafec88323285be52172ec7b0d95  MnenraFoto-0.2.0-alpha.2-win-x64-setup.exe
-2b03e5c3e96d753f2a02a59aa6c3c7af48bbe467bafc42b20e194b740f74ac0e  MnenraFoto-0.2.0-alpha.2-win-x64-portable.exe
-```
+Compare the result with `SHA256SUMS.txt` attached to the matching release before running the EXE.
 
 ## Feedback
 
-Use [GitHub Issues](https://github.com/mnenracom/mnenrafoto-releases/issues). For printing issues, include printer model, Windows version, paper format, driver type, expected result, and actual result.
+Use [GitHub Issues](https://github.com/madeinsuslov/mnenrafoto-releases/issues). For printing issues, include printer model, Windows version, paper format, driver type, expected result, and actual result.

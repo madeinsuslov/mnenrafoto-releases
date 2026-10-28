@@ -2,20 +2,49 @@
 
 Бесплатная Windows-программа для быстрой подготовки и печати фотографий.
 
-> **Текущая версия:** 0.2.0 Alpha 2<br>
+> **Текущая версия:** 0.2.0 Alpha 3<br>
 > **Статус:** публичное тестирование<br>
 > **Платформа:** Windows 10/11, 64-bit
 
 [English version](README_EN.md)
 
-[![Скачать Setup](https://img.shields.io/badge/Скачать_Setup-Рекомендуется-0B5FFF?style=for-the-badge&logo=windows)](https://github.com/mnenracom/mnenrafoto-releases/releases/download/v0.2.0-alpha.2/MnenraFoto-0.2.0-alpha.2-win-x64-setup.exe)
-[![Portable](https://img.shields.io/badge/Portable-Без_установки-2F855A?style=for-the-badge)](https://github.com/mnenracom/mnenrafoto-releases/releases/download/v0.2.0-alpha.2/MnenraFoto-0.2.0-alpha.2-win-x64-portable.exe)
-[![Страница релиза](https://img.shields.io/badge/Страница_релиза-v0.2.0--alpha.2-4A5568?style=for-the-badge&logo=github)](https://github.com/mnenracom/mnenrafoto-releases/releases/tag/v0.2.0-alpha.2)
-[![SHA-256](https://img.shields.io/badge/SHA--256-Проверить-805AD5?style=for-the-badge)](https://github.com/mnenracom/mnenrafoto-releases/releases/download/v0.2.0-alpha.2/SHA256SUMS.txt)
+[![Скачать Setup](https://img.shields.io/badge/Скачать_Setup-Рекомендуется-0B5FFF?style=for-the-badge&logo=windows)](https://github.com/madeinsuslov/mnenrafoto-releases/releases/download/v0.2.0-alpha.3/MnenraFoto-0.2.0-alpha.3-win-x64-setup.exe)
+[![Portable](https://img.shields.io/badge/Portable-Без_установки-2F855A?style=for-the-badge)](https://github.com/madeinsuslov/mnenrafoto-releases/releases/download/v0.2.0-alpha.3/MnenraFoto-0.2.0-alpha.3-win-x64-portable.exe)
+[![Страница релиза](https://img.shields.io/badge/Страница_релиза-v0.2.0--alpha.3-4A5568?style=for-the-badge&logo=github)](https://github.com/madeinsuslov/mnenrafoto-releases/releases/tag/v0.2.0-alpha.3)
+[![SHA-256](https://img.shields.io/badge/SHA--256-Проверить-805AD5?style=for-the-badge)](https://github.com/madeinsuslov/mnenrafoto-releases/releases/download/v0.2.0-alpha.3/SHA256SUMS.txt)
 
-[Сайт RU](https://mnenrafoto.ru/program) · [Website EN](https://mnenrafoto.ru/en/program) · [Boosty](https://boosty.to/mnenra) · [Сообщить об ошибке](https://github.com/mnenracom/mnenrafoto-releases/issues/new/choose)
+[Сайт RU](https://mnenrafoto.ru/program) · [Website EN](https://mnenrafoto.ru/en/program) · [Boosty](https://boosty.to/mnenra) · [Сообщить об ошибке](https://github.com/madeinsuslov/mnenrafoto-releases/issues/new/choose)
 
-![Интерфейс МНЕНРАФОТО 0.2 Alpha 2](assets/alpha2-photo-print.png)
+## Новое в Alpha 3
+
+**Комфортное оформление, белые промежутки и более осторожная подготовка печати.**
+
+- **Три темы:** системная, светлая и тёмная. Переключение рядом с языком, без перезапуска.
+- **Читаемый интерфейс:** обновлены подписи, поля, меню, уведомления и неактивные элементы.
+- **Промежутки между фото:** 0 / 1 / 2 / 3 / 5 мм в раскладках 2 и 4, с preview и подтверждением размеров.
+- **Epson L8050:** именованная бумага драйвера и проверка итогового формата перед печатью.
+- **Сохранены релизные исправления:** размещение листа, прогресс и завершение GDI-задания.
+
+> **Это предварительная Alpha.** L8050 ещё не проверен физически. Промежутки больше 0 мм
+> пока доступны только с полями. Четыре фото ровно 100×150 мм не помещаются на A4 в сетке 2×2.
+> Подробности и причины изменений: [release notes Alpha 3](RELEASE_NOTES_v0.2.0-alpha.3.md).
+
+### Светлая и тёмная темы
+
+| Светлая | Тёмная |
+| --- | --- |
+| ![Светлая тема Alpha 3](assets/alpha3-light.png) | ![Тёмная тема Alpha 3](assets/alpha3-dark.png) |
+
+Тема меняет только интерфейс: фотографии, белая бумага, экспорт и печать сохраняют свои цвета.
+Для существующих профилей остаётся тёмное оформление; новые следуют теме Windows.
+
+### Как обновиться
+
+Закройте старую версию, скачайте Setup или Portable и сначала проверьте один лист.
+Обычные версии используют прежний профиль. Перед обновлением важных заказов сделайте
+резервную копию. Отдельные сборки `TEST L8050` использовали другой тестовый профиль.
+
+![Фотопечать: интерфейс предыдущей Alpha 2](assets/alpha2-photo-print.png)
 
 ## Скриншоты Alpha 2
 
@@ -37,7 +66,7 @@
 - печатать обычные фотографии и фото на документы;
 - не загружать изображения в облако.
 
-## Новое в Alpha 2
+## Возможности из Alpha 2
 
 ### Фото на документы
 
@@ -75,7 +104,7 @@
 
 Результат физической печати зависит от конкретного принтера, драйвера, бумаги и настроек Windows.
 
-## Что умеет Alpha 2
+## Основные возможности
 
 - импорт файлов и папок;
 - JPG/JPEG/PNG/WebP/HEIC/HEIF;
@@ -112,10 +141,10 @@
 
 | Вариант | Для кого |
 | --- | --- |
-| [Setup](https://github.com/mnenracom/mnenrafoto-releases/releases/download/v0.2.0-alpha.2/MnenraFoto-0.2.0-alpha.2-win-x64-setup.exe) | Рекомендуется большинству пользователей |
-| [Portable](https://github.com/mnenracom/mnenrafoto-releases/releases/download/v0.2.0-alpha.2/MnenraFoto-0.2.0-alpha.2-win-x64-portable.exe) | Запуск без установки |
-| [SHA256SUMS.txt](https://github.com/mnenracom/mnenrafoto-releases/releases/download/v0.2.0-alpha.2/SHA256SUMS.txt) | Проверка целостности файлов |
-| [Страница релиза](https://github.com/mnenracom/mnenrafoto-releases/releases/tag/v0.2.0-alpha.2) | Полное описание Alpha 2 и все файлы |
+| [Setup](https://github.com/madeinsuslov/mnenrafoto-releases/releases/download/v0.2.0-alpha.3/MnenraFoto-0.2.0-alpha.3-win-x64-setup.exe) | Рекомендуется большинству пользователей |
+| [Portable](https://github.com/madeinsuslov/mnenrafoto-releases/releases/download/v0.2.0-alpha.3/MnenraFoto-0.2.0-alpha.3-win-x64-portable.exe) | Запуск без установки |
+| [SHA256SUMS.txt](https://github.com/madeinsuslov/mnenrafoto-releases/releases/download/v0.2.0-alpha.3/SHA256SUMS.txt) | Проверка целостности файлов |
+| [Страница релиза](https://github.com/madeinsuslov/mnenrafoto-releases/releases/tag/v0.2.0-alpha.3) | Полное описание Alpha 3 и все файлы |
 
 ## Системные требования
 
@@ -133,7 +162,7 @@
 - программа не отправляет фотографии разработчику;
 - при обращении в Issues не следует прикладывать чужие личные фотографии.
 
-## Важные ограничения Alpha 2
+## Важные ограничения Alpha 3
 
 - это тестовая Alpha;
 - возможны ошибки;
@@ -151,20 +180,16 @@
 Скачайте `SHA256SUMS.txt` со страницы релиза и сравните SHA-256 скачанных файлов:
 
 ```powershell
-Get-FileHash .\MnenraFoto-0.2.0-alpha.2-win-x64-setup.exe -Algorithm SHA256
-Get-FileHash .\MnenraFoto-0.2.0-alpha.2-win-x64-portable.exe -Algorithm SHA256
+Get-FileHash .\MnenraFoto-0.2.0-alpha.3-win-x64-setup.exe -Algorithm SHA256
+Get-FileHash .\MnenraFoto-0.2.0-alpha.3-win-x64-portable.exe -Algorithm SHA256
 ```
 
-Для Alpha 2 опубликованы значения:
-
-```text
-cc4744912ed2f8be921156fea6504661fd1ebafec88323285be52172ec7b0d95  MnenraFoto-0.2.0-alpha.2-win-x64-setup.exe
-2b03e5c3e96d753f2a02a59aa6c3c7af48bbe467bafc42b20e194b740f74ac0e  MnenraFoto-0.2.0-alpha.2-win-x64-portable.exe
-```
+Актуальные значения опубликованы в `SHA256SUMS.txt` соответствующего релиза.
+Проверяйте их перед запуском скачанного EXE.
 
 ## Обратная связь
 
-Ошибки и предложения можно отправлять через [GitHub Issues](https://github.com/mnenracom/mnenrafoto-releases/issues). При сообщении о проблеме с печатью укажите:
+Ошибки и предложения можно отправлять через [GitHub Issues](https://github.com/madeinsuslov/mnenrafoto-releases/issues). При сообщении о проблеме с печатью укажите:
 
 - модель принтера;
 - версию Windows;
@@ -182,7 +207,7 @@ cc4744912ed2f8be921156fea6504661fd1ebafec88323285be52172ec7b0d95  MnenraFoto-0.2
 ## Документы
 
 - [English version](README_EN.md)
-- [Release notes Alpha 2](RELEASE_NOTES_v0.2.0-alpha.2.md)
+- [Release notes Alpha 3](RELEASE_NOTES_v0.2.0-alpha.3.md)
 - [CHANGELOG.md](CHANGELOG.md)
 - [KNOWN_ISSUES.md](KNOWN_ISSUES.md)
 - [PRIVACY.md](PRIVACY.md)
